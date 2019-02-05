@@ -3,7 +3,7 @@
   tasks:
     - name: My name is 
       debug:
-        msg: "System {{ inventory_hostname }}"
+        msg: "System {{ ansible_default_ipv4.address }}"
     - shell: /usr/bin/uptime
       register: result
 
