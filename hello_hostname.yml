@@ -1,0 +1,13 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: My name is 
+      debug:
+        msg: "System {{ inventory_hostname }"
+    - shell: /usr/bin/uptime
+      register: result
+
+    - debug:
+        var: result
+        verbosity: 2
+
