@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: Hello IP Sample
   hosts: all
   tasks:
     - name: My name is 
